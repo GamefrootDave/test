@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Gamefroot Arcade</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        background: black;
+        overflow:  hidden;
+      }
+
+      #game-container {
+        margin: auto;
+      }
+    </style>
+
+    <script src="/storage.googleapis.com/static.gamefroot.com/engine/phaserfroot/2.2.9-0/lib/phaser.min.js"></script>
+
+    <script src="/storage.googleapis.com/static.gamefroot.com/engine/phaserfroot/2.2.9-0/phaserfroot.js"></script>
+
+    <script>
+      var game = Phaserfroot.boot( {
+        data: "/storage.googleapis.com/users.gamefroot.com/5151/project/307445/1621654781849.json",
+        parent: "game-container",
+        width: 960,
+        height: 540,
+        scale: {
+          autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+          mode: Phaser.Scale.FIT,
+        },
+        splash: {
+          image: "/storage.googleapis.com/static.gamefroot.com/engine/phaserfroot/2.2.9-0/assets/gamefrootAtlas.png",
+          json: "/storage.googleapis.com/static.gamefroot.com/engine/phaserfroot/2.2.9-0/assets/gamefrootAtlas.phaser.json",
+        },
+      } );
+    </script>
+
+  </head>
+  <body>
+    <div id="game-container"></div>
+  </body>
+</html>
